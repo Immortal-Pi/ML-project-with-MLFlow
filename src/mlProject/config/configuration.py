@@ -1,6 +1,6 @@
 from mlProject.constants import * 
 from mlProject.utils.common import read_yaml,create_directories
-from mlProject.entity.config_entity import DataIngestionConfig, DataValidationConfig, DataTransformationConfig, ModelTrainConfig
+from mlProject.entity.config_entity import DataIngestionConfig, DataValidationConfig, DataTransformationConfig, ModelTrainConfig, ModelEvaluationConfig
 
 
 class ConfigurationManager:
@@ -70,3 +70,23 @@ class ConfigurationManager:
         )
 
         return model_train_config
+    
+    def get_model_evaluation_config(self)->ModelEvaluationConfig:
+        config=self.config.model_evalution
+        params=self.params.ElasticNet
+        schema=self.schema.TARGET_COLUMN
+        mlflow_tracking=self.config.mlflow_tracking
+        create_directories([config.root_dir])
+
+        model_evalution_config=ModelEvaluationConfig(
+            root_dir=config.root_dir, 
+            test_data_path=config.test_data_path,
+            model_path=config.model_path,
+            all_params=params,
+            metric_file_name= config.metric_file_name,
+            target_column= schema.name, 
+            repo_owner= mlflow_tracking.repo_owner, 
+            repo_name = mlflow_tracking.repo_name
+        )
+
+        return model_evalution_config
