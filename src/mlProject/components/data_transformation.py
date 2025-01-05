@@ -13,7 +13,7 @@ class DataTransformation:
 
     def train_test_spliting(self):
 
-        data=pd.read_csv(self.config.data_path)
+        data=pd.read_csv(self.config.data_path).drop(columns=['Id'])
 
         train,test=train_test_split(data)
         train.to_csv(os.path.join(self.config.root_dir,'train.csv'),index=False)
