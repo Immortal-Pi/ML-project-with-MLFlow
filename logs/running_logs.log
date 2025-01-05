@@ -206,3 +206,242 @@ TypeError: DataValidationTrainingPipeline.main() takes 0 positional arguments bu
 [2025-01-04 13:59:14,972: INFO:main: >>>>> stage Data Validation stage completed <<<<<
 
  x==========x]
+[2025-01-04 15:14:31,356: INFO:common: yaml file: config\config.yaml loaded successfully]
+[2025-01-04 15:15:06,697: INFO:common: yaml file: config\config.yaml loaded successfully]
+[2025-01-04 15:15:06,698: INFO:common: created directory at: artifacts]
+[2025-01-04 15:15:06,699: INFO:common: created directory at: artifacts/data_transformation]
+[2025-01-04 15:15:06,720: INFO:2302691249: Splited data into training and test set]
+[2025-01-04 15:15:06,721: INFO:2302691249: training set shape : (857, 13)]
+[2025-01-04 15:15:06,722: INFO:2302691249: testing set shape : (286, 13)]
+[2025-01-04 15:37:38,467: INFO:common: yaml file: config\config.yaml loaded successfully]
+[2025-01-04 15:37:38,469: INFO:common: created directory at: artifacts]
+[2025-01-04 15:37:38,470: INFO:common: created directory at: artifacts/data_transformation]
+[2025-01-04 15:37:38,484: INFO:3161829124: Splited data into training and test set]
+[2025-01-04 15:37:38,485: INFO:3161829124: training set shape : (857, 13)]
+[2025-01-04 15:37:38,485: INFO:3161829124: testing set shape : (286, 13)]
+[2025-01-04 16:22:48,858: INFO:main: >>>>> stage Data Ingestion stage started <<<<<]
+[2025-01-04 16:22:48,861: INFO:common: yaml file: config\config.yaml loaded successfully]
+[2025-01-04 16:22:48,862: INFO:common: yaml file: params.yaml loaded successfully]
+[2025-01-04 16:22:48,864: INFO:common: yaml file: schema.yaml loaded successfully]
+[2025-01-04 16:22:48,864: INFO:common: created directory at: artifacts]
+[2025-01-04 16:22:48,865: INFO:common: created directory at: artifacts/data_ingestion]
+[2025-01-04 16:22:48,865: INFO:data_ingestion: Downloading data from https://drive.google.com/file/d/1cEAi27z0Fd0GlbZ6esrsxXJbe95glDaI/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-01-04 16:22:52,656: INFO:data_ingestion: Downloaded data from https://drive.google.com/file/d/1cEAi27z0Fd0GlbZ6esrsxXJbe95glDaI/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-01-04 16:22:52,676: INFO:main: >>>>> stage Data Ingestion stage completed <<<<< 
+
+ x==========x]
+[2025-01-04 16:22:52,676: INFO:main: >>>>> stage Data Validation stage started <<<<<]
+[2025-01-04 16:22:52,678: INFO:common: yaml file: config\config.yaml loaded successfully]
+[2025-01-04 16:22:52,679: INFO:common: yaml file: params.yaml loaded successfully]
+[2025-01-04 16:22:52,681: INFO:common: yaml file: schema.yaml loaded successfully]
+[2025-01-04 16:22:52,682: INFO:common: created directory at: artifacts]
+[2025-01-04 16:22:52,682: INFO:common: created directory at: artifacts/data_validation]
+[2025-01-04 16:22:52,725: INFO:main: >>>>> stage Data Validation stage completed <<<<<
+
+ x==========x]
+[2025-01-04 16:22:52,725: INFO:main: >>>>> stage Data Transformation stage started <<<<<]
+[2025-01-04 16:22:52,726: ERROR:main: DataTransformationTrainingPipeline.main() takes 0 positional arguments but 1 was given]
+Traceback (most recent call last):
+  File "D:\pythonProjects\MLflow_ML_project\main.py", line 31, in <module>
+    data_transformation.main()
+TypeError: DataTransformationTrainingPipeline.main() takes 0 positional arguments but 1 was given
+[2025-01-04 16:23:15,168: INFO:main: >>>>> stage Data Ingestion stage started <<<<<]
+[2025-01-04 16:23:15,170: INFO:common: yaml file: config\config.yaml loaded successfully]
+[2025-01-04 16:23:15,171: INFO:common: yaml file: params.yaml loaded successfully]
+[2025-01-04 16:23:15,173: INFO:common: yaml file: schema.yaml loaded successfully]
+[2025-01-04 16:23:15,173: INFO:common: created directory at: artifacts]
+[2025-01-04 16:23:15,174: INFO:common: created directory at: artifacts/data_ingestion]
+[2025-01-04 16:23:15,174: INFO:data_ingestion: Downloading data from https://drive.google.com/file/d/1cEAi27z0Fd0GlbZ6esrsxXJbe95glDaI/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-01-04 16:23:18,911: INFO:data_ingestion: Downloaded data from https://drive.google.com/file/d/1cEAi27z0Fd0GlbZ6esrsxXJbe95glDaI/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-01-04 16:23:18,930: INFO:main: >>>>> stage Data Ingestion stage completed <<<<< 
+
+ x==========x]
+[2025-01-04 16:23:18,930: INFO:main: >>>>> stage Data Validation stage started <<<<<]
+[2025-01-04 16:23:18,932: INFO:common: yaml file: config\config.yaml loaded successfully]
+[2025-01-04 16:23:18,934: INFO:common: yaml file: params.yaml loaded successfully]
+[2025-01-04 16:23:18,936: INFO:common: yaml file: schema.yaml loaded successfully]
+[2025-01-04 16:23:18,936: INFO:common: created directory at: artifacts]
+[2025-01-04 16:23:18,937: INFO:common: created directory at: artifacts/data_validation]
+[2025-01-04 16:23:18,977: INFO:main: >>>>> stage Data Validation stage completed <<<<<
+
+ x==========x]
+[2025-01-04 16:23:18,978: INFO:main: >>>>> stage Data Transformation stage started <<<<<]
+[2025-01-04 16:23:18,978: INFO:main: >>>>> stage Data Transformation stage completed <<<<<
+
+ x==========x]
+[2025-01-04 16:24:59,470: INFO:main: >>>>> stage Data Ingestion stage started <<<<<]
+[2025-01-04 16:24:59,472: INFO:common: yaml file: config\config.yaml loaded successfully]
+[2025-01-04 16:24:59,473: INFO:common: yaml file: params.yaml loaded successfully]
+[2025-01-04 16:24:59,475: INFO:common: yaml file: schema.yaml loaded successfully]
+[2025-01-04 16:24:59,475: INFO:common: created directory at: artifacts]
+[2025-01-04 16:24:59,476: INFO:common: created directory at: artifacts/data_ingestion]
+[2025-01-04 16:24:59,476: INFO:data_ingestion: Downloading data from https://drive.google.com/file/d/1cEAi27z0Fd0GlbZ6esrsxXJbe95glDaI/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-01-04 16:25:03,298: INFO:data_ingestion: Downloaded data from https://drive.google.com/file/d/1cEAi27z0Fd0GlbZ6esrsxXJbe95glDaI/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-01-04 16:25:03,323: INFO:main: >>>>> stage Data Ingestion stage completed <<<<< 
+
+ x==========x]
+[2025-01-04 16:25:03,324: INFO:main: >>>>> stage Data Validation stage started <<<<<]
+[2025-01-04 16:25:03,330: INFO:common: yaml file: config\config.yaml loaded successfully]
+[2025-01-04 16:25:03,331: INFO:common: yaml file: params.yaml loaded successfully]
+[2025-01-04 16:25:03,333: INFO:common: yaml file: schema.yaml loaded successfully]
+[2025-01-04 16:25:03,334: INFO:common: created directory at: artifacts]
+[2025-01-04 16:25:03,334: INFO:common: created directory at: artifacts/data_validation]
+[2025-01-04 16:25:03,403: INFO:main: >>>>> stage Data Validation stage completed <<<<<
+
+ x==========x]
+[2025-01-04 16:25:03,403: INFO:main: >>>>> stage Data Transformation stage started <<<<<]
+[2025-01-04 16:25:03,404: INFO:main: >>>>> stage Data Transformation stage completed <<<<<
+
+ x==========x]
+[2025-01-04 16:26:30,031: INFO:main: >>>>> stage Data Ingestion stage started <<<<<]
+[2025-01-04 16:26:30,034: INFO:common: yaml file: config\config.yaml loaded successfully]
+[2025-01-04 16:26:30,035: INFO:common: yaml file: params.yaml loaded successfully]
+[2025-01-04 16:26:30,037: INFO:common: yaml file: schema.yaml loaded successfully]
+[2025-01-04 16:26:30,038: INFO:common: created directory at: artifacts]
+[2025-01-04 16:26:30,038: INFO:common: created directory at: artifacts/data_ingestion]
+[2025-01-04 16:26:30,038: INFO:data_ingestion: Downloading data from https://drive.google.com/file/d/1cEAi27z0Fd0GlbZ6esrsxXJbe95glDaI/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-01-04 16:26:33,836: INFO:data_ingestion: Downloaded data from https://drive.google.com/file/d/1cEAi27z0Fd0GlbZ6esrsxXJbe95glDaI/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-01-04 16:26:33,862: INFO:main: >>>>> stage Data Ingestion stage completed <<<<< 
+
+ x==========x]
+[2025-01-04 16:26:33,863: INFO:main: >>>>> stage Data Validation stage started <<<<<]
+[2025-01-04 16:26:33,865: INFO:common: yaml file: config\config.yaml loaded successfully]
+[2025-01-04 16:26:33,867: INFO:common: yaml file: params.yaml loaded successfully]
+[2025-01-04 16:26:33,869: INFO:common: yaml file: schema.yaml loaded successfully]
+[2025-01-04 16:26:33,869: INFO:common: created directory at: artifacts]
+[2025-01-04 16:26:33,869: INFO:common: created directory at: artifacts/data_validation]
+[2025-01-04 16:26:33,924: INFO:main: >>>>> stage Data Validation stage completed <<<<<
+
+ x==========x]
+[2025-01-04 16:26:33,924: INFO:main: >>>>> stage Data Transformation stage started <<<<<]
+[2025-01-04 16:26:33,925: INFO:main: >>>>> stage Data Transformation stage completed <<<<<
+
+ x==========x]
+[2025-01-04 16:26:57,161: INFO:main: >>>>> stage Data Ingestion stage started <<<<<]
+[2025-01-04 16:26:57,163: INFO:common: yaml file: config\config.yaml loaded successfully]
+[2025-01-04 16:26:57,164: INFO:common: yaml file: params.yaml loaded successfully]
+[2025-01-04 16:26:57,166: INFO:common: yaml file: schema.yaml loaded successfully]
+[2025-01-04 16:26:57,166: INFO:common: created directory at: artifacts]
+[2025-01-04 16:26:57,167: INFO:common: created directory at: artifacts/data_ingestion]
+[2025-01-04 16:26:57,168: INFO:data_ingestion: Downloading data from https://drive.google.com/file/d/1cEAi27z0Fd0GlbZ6esrsxXJbe95glDaI/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-01-04 16:27:00,935: INFO:data_ingestion: Downloaded data from https://drive.google.com/file/d/1cEAi27z0Fd0GlbZ6esrsxXJbe95glDaI/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-01-04 16:27:00,953: INFO:main: >>>>> stage Data Ingestion stage completed <<<<< 
+
+ x==========x]
+[2025-01-04 16:27:00,954: INFO:main: >>>>> stage Data Validation stage started <<<<<]
+[2025-01-04 16:27:00,956: INFO:common: yaml file: config\config.yaml loaded successfully]
+[2025-01-04 16:27:00,956: INFO:common: yaml file: params.yaml loaded successfully]
+[2025-01-04 16:27:00,958: INFO:common: yaml file: schema.yaml loaded successfully]
+[2025-01-04 16:27:00,959: INFO:common: created directory at: artifacts]
+[2025-01-04 16:27:00,959: INFO:common: created directory at: artifacts/data_validation]
+[2025-01-04 16:27:00,989: INFO:main: >>>>> stage Data Validation stage completed <<<<<
+
+ x==========x]
+[2025-01-04 16:27:00,990: INFO:main: >>>>> stage Data Transformation stage started <<<<<]
+[2025-01-04 16:27:00,991: INFO:common: yaml file: config\config.yaml loaded successfully]
+[2025-01-04 16:27:00,992: INFO:common: yaml file: params.yaml loaded successfully]
+[2025-01-04 16:27:00,994: INFO:common: yaml file: schema.yaml loaded successfully]
+[2025-01-04 16:27:00,995: INFO:common: created directory at: artifacts]
+[2025-01-04 16:27:00,995: INFO:common: created directory at: artifacts/data_transformation]
+[2025-01-04 16:27:01,006: INFO:data_transformation: Splited data into training and test set]
+[2025-01-04 16:27:01,007: INFO:data_transformation: training set shape : (857, 13)]
+[2025-01-04 16:27:01,007: INFO:data_transformation: testing set shape : (286, 13)]
+[2025-01-04 16:27:01,007: INFO:main: >>>>> stage Data Transformation stage completed <<<<<
+
+ x==========x]
+[2025-01-04 20:52:35,291: INFO:common: yaml file: config\config.yaml loaded successfully]
+[2025-01-04 20:52:35,295: INFO:common: yaml file: params.yaml loaded successfully]
+[2025-01-04 20:52:35,304: INFO:common: yaml file: schema.yaml loaded successfully]
+[2025-01-04 20:52:35,305: INFO:common: created directory at: artifacts]
+[2025-01-04 20:53:08,124: INFO:common: yaml file: config\config.yaml loaded successfully]
+[2025-01-04 20:53:08,125: INFO:common: yaml file: params.yaml loaded successfully]
+[2025-01-04 20:53:08,127: INFO:common: yaml file: schema.yaml loaded successfully]
+[2025-01-04 20:53:08,128: INFO:common: created directory at: artifacts]
+[2025-01-04 20:53:08,129: INFO:common: created directory at: artifacts/model_trainer]
+[2025-01-04 21:11:52,620: INFO:main: >>>>> stage Data Ingestion stage started <<<<<]
+[2025-01-04 21:11:52,622: INFO:common: yaml file: config\config.yaml loaded successfully]
+[2025-01-04 21:11:52,622: INFO:common: yaml file: params.yaml loaded successfully]
+[2025-01-04 21:11:52,626: INFO:common: yaml file: schema.yaml loaded successfully]
+[2025-01-04 21:11:52,627: INFO:common: created directory at: artifacts]
+[2025-01-04 21:11:52,628: INFO:common: created directory at: artifacts/data_ingestion]
+[2025-01-04 21:11:52,628: INFO:data_ingestion: Downloading data from https://drive.google.com/file/d/1cEAi27z0Fd0GlbZ6esrsxXJbe95glDaI/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-01-04 21:11:56,724: INFO:data_ingestion: Downloaded data from https://drive.google.com/file/d/1cEAi27z0Fd0GlbZ6esrsxXJbe95glDaI/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-01-04 21:11:56,752: INFO:main: >>>>> stage Data Ingestion stage completed <<<<< 
+
+ x==========x]
+[2025-01-04 21:11:56,753: INFO:main: >>>>> stage Data Validation stage started <<<<<]
+[2025-01-04 21:11:56,755: INFO:common: yaml file: config\config.yaml loaded successfully]
+[2025-01-04 21:11:56,756: INFO:common: yaml file: params.yaml loaded successfully]
+[2025-01-04 21:11:56,758: INFO:common: yaml file: schema.yaml loaded successfully]
+[2025-01-04 21:11:56,758: INFO:common: created directory at: artifacts]
+[2025-01-04 21:11:56,759: INFO:common: created directory at: artifacts/data_validation]
+[2025-01-04 21:11:56,803: INFO:main: >>>>> stage Data Validation stage completed <<<<<
+
+ x==========x]
+[2025-01-04 21:11:56,803: INFO:main: >>>>> stage Data Transformation stage started <<<<<]
+[2025-01-04 21:11:56,806: INFO:common: yaml file: config\config.yaml loaded successfully]
+[2025-01-04 21:11:56,807: INFO:common: yaml file: params.yaml loaded successfully]
+[2025-01-04 21:11:56,810: INFO:common: yaml file: schema.yaml loaded successfully]
+[2025-01-04 21:11:56,811: INFO:common: created directory at: artifacts]
+[2025-01-04 21:11:56,811: INFO:common: created directory at: artifacts/data_transformation]
+[2025-01-04 21:11:56,826: INFO:data_transformation: Splited data into training and test set]
+[2025-01-04 21:11:56,827: INFO:data_transformation: training set shape : (857, 13)]
+[2025-01-04 21:11:56,827: INFO:data_transformation: testing set shape : (286, 13)]
+[2025-01-04 21:11:56,827: INFO:main: >>>>> stage Data Transformation stage completed <<<<<
+
+ x==========x]
+[2025-01-04 21:11:56,827: INFO:main: >>>>> stage Model Trainer stage started <<<<<]
+[2025-01-04 21:11:56,830: INFO:common: yaml file: config\config.yaml loaded successfully]
+[2025-01-04 21:11:56,831: INFO:common: yaml file: params.yaml loaded successfully]
+[2025-01-04 21:11:56,832: INFO:common: yaml file: schema.yaml loaded successfully]
+[2025-01-04 21:11:56,833: INFO:common: created directory at: artifacts]
+[2025-01-04 21:11:56,833: ERROR:main: 'ConfigurationManager' object has no attribute 'param']
+Traceback (most recent call last):
+  File "D:\pythonProjects\MLflow_ML_project\main.py", line 42, in <module>
+    model_trainer.main()
+  File "d:\pythonprojects\mlflow_ml_project\src\mlProject\pipeline\model_trainer.py", line 14, in main
+    model_trainer_config=config.get_model_trainer_config()
+  File "d:\pythonprojects\mlflow_ml_project\src\mlProject\config\configuration.py", line 57, in get_model_trainer_config
+    params=self.param.ElasticNet
+AttributeError: 'ConfigurationManager' object has no attribute 'param'
+[2025-01-04 21:13:01,189: INFO:main: >>>>> stage Data Ingestion stage started <<<<<]
+[2025-01-04 21:13:01,192: INFO:common: yaml file: config\config.yaml loaded successfully]
+[2025-01-04 21:13:01,193: INFO:common: yaml file: params.yaml loaded successfully]
+[2025-01-04 21:13:01,196: INFO:common: yaml file: schema.yaml loaded successfully]
+[2025-01-04 21:13:01,196: INFO:common: created directory at: artifacts]
+[2025-01-04 21:13:01,197: INFO:common: created directory at: artifacts/data_ingestion]
+[2025-01-04 21:13:01,197: INFO:data_ingestion: Downloading data from https://drive.google.com/file/d/1cEAi27z0Fd0GlbZ6esrsxXJbe95glDaI/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-01-04 21:13:04,876: INFO:data_ingestion: Downloaded data from https://drive.google.com/file/d/1cEAi27z0Fd0GlbZ6esrsxXJbe95glDaI/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-01-04 21:13:04,896: INFO:main: >>>>> stage Data Ingestion stage completed <<<<< 
+
+ x==========x]
+[2025-01-04 21:13:04,896: INFO:main: >>>>> stage Data Validation stage started <<<<<]
+[2025-01-04 21:13:04,899: INFO:common: yaml file: config\config.yaml loaded successfully]
+[2025-01-04 21:13:04,900: INFO:common: yaml file: params.yaml loaded successfully]
+[2025-01-04 21:13:04,902: INFO:common: yaml file: schema.yaml loaded successfully]
+[2025-01-04 21:13:04,902: INFO:common: created directory at: artifacts]
+[2025-01-04 21:13:04,903: INFO:common: created directory at: artifacts/data_validation]
+[2025-01-04 21:13:04,939: INFO:main: >>>>> stage Data Validation stage completed <<<<<
+
+ x==========x]
+[2025-01-04 21:13:04,939: INFO:main: >>>>> stage Data Transformation stage started <<<<<]
+[2025-01-04 21:13:04,941: INFO:common: yaml file: config\config.yaml loaded successfully]
+[2025-01-04 21:13:04,942: INFO:common: yaml file: params.yaml loaded successfully]
+[2025-01-04 21:13:04,944: INFO:common: yaml file: schema.yaml loaded successfully]
+[2025-01-04 21:13:04,945: INFO:common: created directory at: artifacts]
+[2025-01-04 21:13:04,945: INFO:common: created directory at: artifacts/data_transformation]
+[2025-01-04 21:13:04,957: INFO:data_transformation: Splited data into training and test set]
+[2025-01-04 21:13:04,957: INFO:data_transformation: training set shape : (857, 13)]
+[2025-01-04 21:13:04,958: INFO:data_transformation: testing set shape : (286, 13)]
+[2025-01-04 21:13:04,958: INFO:main: >>>>> stage Data Transformation stage completed <<<<<
+
+ x==========x]
+[2025-01-04 21:13:04,958: INFO:main: >>>>> stage Model Trainer stage started <<<<<]
+[2025-01-04 21:13:04,961: INFO:common: yaml file: config\config.yaml loaded successfully]
+[2025-01-04 21:13:04,962: INFO:common: yaml file: params.yaml loaded successfully]
+[2025-01-04 21:13:04,964: INFO:common: yaml file: schema.yaml loaded successfully]
+[2025-01-04 21:13:04,964: INFO:common: created directory at: artifacts]
+[2025-01-04 21:13:04,964: INFO:common: created directory at: artifacts/model_trainer]
+[2025-01-04 21:13:04,987: INFO:main: >>>>> stage Model Trainer stage completed <<<<<
+
+ x==========x]
