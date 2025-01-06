@@ -62,6 +62,9 @@ dagshub.init(repo_owner='your-github-username', repo_name='your-repository-name'
 ```bash 
 - mlflow ui 
 ``` 
+![MLFlow Workflow](https://github.com/Immortal-Pi/ML-project-with-MLFlow/blob/main/documentation/mlflow1.png)
+
+![MLFlow Workflow](https://github.com/Immortal-Pi/ML-project-with-MLFlow/blob/main/documentation/mlflow2.png)
 
 
 ## AWS CICD Deployment with Github Actions 
@@ -117,6 +120,8 @@ ECR_REPOSITORY_NAME = simple-app
 ```
 
 ## Demo 
+
+![Demo of ML Project](https://github.com/Immortal-Pi/ML-project-with-MLFlow/blob/main/documentation/demo.gif)
 
 
 
