@@ -1,0 +1,60 @@
+stages:
+  data_ingestion:
+    cmd: python src/mlProject/pipeline/data_ingestion_stage.py
+    deps:
+      - src/mlProject/pipeline/data_ingestion_stage.py
+      - config/config.yaml
+    outs:
+      - artifacts/data_ingestion/wine-quality
+  
+  data_validation:
+    cmd: python src/mlProject/pipeline/data_validation_stage.py
+    deps:
+      - src/mlProject/pipeline/data_validation_stage.py
+      - config/config.yaml
+      - schema.yaml
+    params:
+      - ElasticNet.alpha
+      - ElasticNet.l1_ratio
+    outs:
+      - artifacts/data_validation
+
+  data_transformation: 
+    cmd: python src/mlProject/pipeline/data_transformation_stage.py
+    deps:
+      - src/mlProject/pipeline/data_transformation_stage.py
+      - artifacts/data_validation
+      - config/config.yaml
+      - schema.yaml
+    params:
+      - ElasticNet.alpha
+      - ElasticNet.l1_ratio
+    outs:
+        - artifacts/data_transformation
+
+  model_trainer:
+    cmd: python src/mlProject/pipeline/model_trainer.py
+    deps:
+      - src/mlProject/pipeline/model_trainer.py
+      - artifacts/data_transformation
+      - config/config.yaml
+      - schema.yaml
+    params:
+      - ElasticNet.alpha
+      - ElasticNet.l1_ratio
+    outs:
+      - artifacts/model_trainer
+
+  model_evalation:
+    cmd: python src/mlProject/pipeline/model_evalution.py
+    deps:
+      - src/mlProject/pipeline/model_evalution.py
+      - artifacts/model_trainer/model.joblib
+      - artifacts/data_transformation
+      - config/config.yaml
+      - schema.yaml
+    params:
+      - ElasticNet.alpha
+      - ElasticNet.l1_ratio
+    outs:
+      - artifacts/model_evaluation 
