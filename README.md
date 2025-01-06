@@ -1,39 +1,67 @@
-# ML project with MLFlow
+# MLOps-Driven Machine Learning Project on EC2
 
-# DagsHub 
+This repository demonstrates the implementation of MLOps principles in the development, deployment, and monitoring of a machine learning application. The project integrates automation, continuous integration/continuous deployment (CI/CD), and scalability to ensure efficient and reliable ML workflows.
 
+##  Features:
+- **Dataset**: Wine Quality dataset 
+    - dataset like :- https://www.kaggle.com/datasets/yasserh/wine-quality-dataset  
+- **Model**: ElasticNet
+- **MLOps Integration**:
+    - Config-driven pipeline setup with YAML.
+    - Data versioning and workflow tracking using DVC.
+    - Modular project structure with reusable components.
+- **Deployment**: Dockerized Flask app for serving the model and deployed on AWS.
+- **Utilities**: Common functions for reading YAML, saving JSON, and handling data.
+- **Project Workflow**:
+    - Data ingestion and preprocessing.
+    - Model training and evaluation.
+    - Deployment with Docker and AWS.
+
+# How to run?
+
+### STEPS:
 Clone the repository
-
-```bash 
+```bash
 https://github.com/Immortal-Pi/ML-project-with-MLFlow
 ```
-## STEP 01- create a conda environment after opening the repository
 
-```bash
-conda create -n mlopsML python=3.9 -y 
+### STEP 01- Create a conda environment after opening the repository
+```bash 
+conda create -n mlopscnn python=3.9 -y
 ```
-```bash
+```bash 
 conda activate mlopsML
 ```
-## STEP 02 - install the requirements
-```bash 
-pip install -r requirements.txt 
+
+### STEP 02- install the requirements
+```bash
+pip install -r requirements.txt
 ```
 
-Now,
+# Finally run the following command
 ```bash
 python app.py
 ```
 
-## MLFlow 
+Now,
 
-#### cmd 
--mlflow ui
+open up you local host and port
 
-## dagsHub 
 
+# MLflow & pipeline tracking
+
+dagshub repo : https://dagshub.com/Immortal-Pi/ML-project-with-MLFlow 
+
+```bash
 import dagshub
-dagshub.init(repo_owner='dagshub_username', repo_name='repository_name', mlflow=True)
+dagshub.init(repo_owner='your-github-username', repo_name='your-repository-name', mlflow=True)
+```
+
+
+### mlflow experiments 
+```bash 
+- mlflow ui 
+``` 
 
 
 ## AWS CICD Deployment with Github Actions 
@@ -88,6 +116,24 @@ AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
 ECR_REPOSITORY_NAME = simple-app
 ```
 
+## Demo 
+
+
+
+## Tech Stack 
+
+- **Programming Language**: Python
+- **Deep Learning Framework**: Keras with TensorFlow backend
+- **MLOps Tools**:
+    - Docker for containerization
+    - Github actions CICD pipelines
+- **Web Framework**: Flask for model deployment
+- **Cloud Platform**: AWS for hosting the model
+- **Version Control**: Git and GitHub
+- **Data Utilities**: YAML, JSON handling, and custom preprocessing functions
+
+## Conclusion
+This project highlights the integration of MLOps principles in managing the entire machine learning lifecycle. While the focus was on building a wine quality prediction model using regression techniques, the core objective was to emphasize the importance of project structure, automation of workflows, and the use of tools like Docker for deployment. Additionally, a CI/CD pipeline was implemented to automate the testing, building, and deployment processes, ensuring consistent and reliable updates to the application. This project serves as a foundation for understanding how to design scalable, maintainable, and efficient ML pipelines, ensuring reproducibility and streamlined collaboration in real-world scenarios.
 
 
 
