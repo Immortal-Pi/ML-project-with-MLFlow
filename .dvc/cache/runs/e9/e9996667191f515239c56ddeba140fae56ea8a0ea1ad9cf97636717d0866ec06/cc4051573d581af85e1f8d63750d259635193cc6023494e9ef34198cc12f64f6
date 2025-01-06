@@ -1,0 +1,29 @@
+cmd: python src/mlProject/pipeline/data_transformation_stage.py
+deps:
+- path: artifacts/data_validation
+  hash: md5
+  md5: 0ccb3ea5849272ff03be5ab71786b9ff.dir
+  size: 23
+  nfiles: 1
+- path: config/config.yaml
+  hash: md5
+  md5: 395d535e7dc015a5c53a8d2a959fe896
+  size: 1111
+- path: schema.yaml
+  hash: md5
+  md5: e1cf3300fe0b1ed2b4afffe8dca203c6
+  size: 345
+- path: src/mlProject/pipeline/data_transformation_stage.py
+  hash: md5
+  md5: fbab52b4597e03918c3456e4b04c4bc2
+  size: 1309
+params:
+  params.yaml:
+    ElasticNet.alpha: 0.1
+    ElasticNet.l1_ratio: 0.2
+outs:
+- path: artifacts/data_transformation
+  hash: md5
+  md5: f8167f4388eafbd9048f3652d46862eb.dir
+  size: 68180
+  nfiles: 2
